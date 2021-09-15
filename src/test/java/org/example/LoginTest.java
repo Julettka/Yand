@@ -14,7 +14,7 @@ public class LoginTest {
 
     @BeforeClass
     public static void setup(){
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Юлия Васильевна\\IdeaProjects\\Yand\\src\\test\\resources\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\chromedriver.exe");
         driver= new ChromeDriver();
         loginPage = new LoginPage(driver);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
