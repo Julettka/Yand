@@ -17,7 +17,7 @@ public class LoginTest {
         System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\chromedriver.exe");
         driver= new ChromeDriver();
         loginPage = new LoginPage(driver);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
         driver.manage().window().maximize();
         driver.get(ConfProperties.getProperty("loginpage"));
     }
